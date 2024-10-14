@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>davidbirenzi</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="images/logo.jpg" type="image/jpg">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <label for="toggle" class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+
+            <div class="links">
+                <div class="port"><a href="index.html">Online portfolio</a></div>
+                <a href="about.html">About me</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html">Experience</a>
+                <a href="project.html"><p>Projects</p></a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="liner">
+                <div class="short-line"></div>
+                <div class="short-circle"></div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="center">
+        <div class="edu">Selected Projects</div>
+        <div class="myline"></div>        
+
+        <div class="project">
+            <div class="project1">
+                <img src="images/htt.jpg" alt="hackthatthing">
+                <h1>Hack That Thing | 2024</h1>
+                <p>Hack That thing is a website that was created to<br>
+                   improve Nigeria’s climate by mitigating post-harvest<br>
+                   food waste and promoting resource efficiency for a <br>
+                  sustainable future.<br></p>
+                
+            </div>
+
+            <div class="project2">
+                <img src="images/race.jpg" alt="thunder race">
+                <h1>Thunder Race | 2022-2023</h1>
+                <p>Thunder Race is a car racing game<br>
+                that can be played both on mobile and<br>
+                PC. It's one of my own projects.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="vert">2023 - 2024</div>ical
+
+    <div class="line-container">
+        <div class="circle"></div>
+        <div class="line"></div>
+        <span class="line-text">&copy davidbirenzi 2024</span>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.links');
+
+        hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>davidbirenzi</title>
+    <link rel="stylesheet" href="education.css">
+    <link rel="icon" href="images/logo.jpg" type="image/jpg">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <label for="toggle" class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+
+            <div class="links">
+                <div class="port"><a href="index.html">Online portfolio</a></div>
+                <a href="about.html">About me</a>
+                <a href="education.html"><p>Education</p></a>
+                <a href="experience.html">Experience</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="liner">
+                <div class="short-line"></div>
+                <div class="short-circle"></div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="center">
+        <div class="edu">Education</div>
+        <div class="myline"></div>
+        <div class="paragraph">
+        I completed my primary education at UPEEC La Lumière, <br>
+        followed by O'Level studies at Groupe Scolaire Saint Joseph.<br>
+        After that, I attended Ecole Secondaire Marie Adelaide <br>
+        for A'Level, where I focused on mathematics, economics, <br>
+        and computer science. <br> <br>
+
+        Currently, I am pursuing a bachelor's degree in software <br>
+        engineering at African Leadership University.</div>
+
+     <div class="right">
+        <div class="year">2016 - 2024</div>
+        <div class="school1">Groupe Scolaire saint Joseph</div>
+        <div class="degree1">O'level|2016</div>
+        <div class="school2">Ecole secondaire marie Adelaide</div>
+        <div class="degree2">A'level|2018</div>
+        <div class="school3">African Leadership University</div>
+        <div class="degree3">Bachelor Degree|2024</div>
+     </div>
+    </div>
+
+    <div class="line-container">
+        <div class="circle"></div>
+        <div class="line"></div>
+        <span class="line-text">&copy davidbirenzi 2024</span>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.links');
+
+        hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

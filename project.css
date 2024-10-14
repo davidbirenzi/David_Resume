@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(5,5,8);
+    background: linear-gradient(90deg, rgba(5,5,8,1) 0%, rgba(23,23,31,1) 44%, rgba(42, 123, 137, 0.895) 100%);
+    font-family: Monospace;
+    overflow-x: hidden;
+}
+
+/* The navigation bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0 5%;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.links a p {
+    text-decoration: underline rgba(42, 123, 137, 0.895);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+.port {
+    background-color: rgba(42, 123, 137, 0.895);
+    padding: 10px;
+}
+
+.links a:hover {
+    text-decoration: underline rgba(42, 123, 137, 0.895);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+/* Hamburger menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Liner */
+.liner {
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
+
+.short-line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: white;
+}
+
+.short-circle {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* Center part */
+.center {
+    color: white;
+    padding-left: 5%;
+}
+
+.edu {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-bottom: 1%;
+}
+
+.myline {
+    background-color: rgba(42, 123, 137, 0.895);
+    height: 10px;
+    width: 25%;
+}
+
+.paragraph {
+    font-size: 1rem;
+}
+
+.vert {
+    margin-top: -34%;
+    padding-left: 5%;
+    color: white;
+    font-size: 4rem;
+    font-weight: bolder;
+    float: right;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+/* Grid for projects */
+.project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 10px;
+    padding-top: 2%;
+}
+
+.project1 img {
+    width: 60%; 
+    height: auto;
+    object-fit: cover;
+}
+.project2 img {
+    width: 50%; 
+    height: auto;
+    object-fit: cover;
+}
+
+h1 {
+    padding-bottom: 2%;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Footer */
+.line-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 86%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: white;
+}
+
+.line-text {
+    color: white;
+    font-family: 'Monospace';
+    font-size: 14px;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(23, 23, 31, 0.95);
+        position: absolute;
+        top: 15vh;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .links.show {
+        display: flex;
+    }
+
+    .nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .port {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .port a {
+        font-size: 1.5rem;
+    }
+
+    .edu {
+        font-size: 2rem;
+    }
+
+    .paragraph {
+        font-size: 0.9rem;
+        padding: 0;
+    }
+
+    .vert {
+        margin-top: 20px;
+        padding-left: 0;
+        font-size: 2.5rem;
+        text-align: center;
+        float: none;
+        transform: rotate(0deg);
+        writing-mode: horizontal-tb;
+    }
+
+    .project img {
+        width: 100%;
+    }
+
+    .line-container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .line-text {
+        font-size: 12px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>davidbirenzi</title>
+    <link rel="stylesheet" href="experience.css">
+    <link rel="icon" href="images/logo.jpg" type="image/jpg">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <label for="toggle" class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+
+            <div class="links">
+                <div class="port"><a href="index.html">Online portfolio</a></div>
+                <a href="about.html">About me</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html"><p>Experience</p></a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="liner">
+                <div class="short-line"></div>
+                <div class="short-circle"></div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="center">
+        <div class="edu">Experience</div>
+        <div class="myline"></div>
+        <div class="paragraph">
+        I completed my secondary studies in 2022, focusing on <br>
+        mathematics,economics, and computer science. After <br>
+        high school, I began coding and had the opportunity <br> 
+        to engage in game development at the ICT Innovation <br>
+        Center Kigali Hub, where we used C# and Unity to<br>
+        create mobile and desktop games. I worked in game <br> 
+        development for about seven months while also exploring <br>
+        web development. Currently, I am pursuing a degree <br>
+        in software engineering at African Leadership University. <br>
+        I have strong experience and knowledge in HTML, CSS, <br>
+        Python, JavaScript (Node.js), C#, and MySQL, with some <br>
+        foundational knowledge in Java and C++. Looking ahead, <br>
+        I plan to specialize in Artificial Intelligence.</div>
+
+     <div class="right">
+        <div class="year">2022 - 2023</div>
+        <div class="school1">ICT Innovation center Kigali</div>
+        <div class="degree1">Game Development</div>
+        <div class="year">2023 - NOW</div>
+        <div class="school2">African Leadership University</div>
+        <div class="degree2">Software Engineering</div>
+     </div>
+    </div>
+
+    <div class="line-container">
+        <div class="circle"></div>
+        <div class="line"></div>
+        <span class="line-text">&copy davidbirenzi 2024</span>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.links');
+
+        hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

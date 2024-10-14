@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>davidbirenzi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="images/logo.jpg" type="image/jpg">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <label for="toggle" class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+
+            <div class="links">
+                <div class="port"><a href="index.html">Online portfolio</a></div>
+                <a href="about.html">About me</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html">Experience</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html"><p>Contact</p></a>
+            </div>
+            <div class="liner">
+                <div class="short-line"></div>
+                <div class="short-circle"></div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="main">
+        <div class="get">Get in touch</div>
+        <div class="let">Let's work together</div>
+
+        <div class="findme">
+            <div class="phone">
+                <div class="icon"><i class="fa-solid fa-phone-volume" style="color: rgba(0, 140, 255, 0.895);"></i></div>
+                
+                <h2>Phone & Mobile</h2>
+                <h3>+250 785 218 776</h3>
+            </div>
+            <div class="email">
+                <div class="icon">
+                    <i class="fa-regular fa-envelope" style="color: rgba(0, 140, 255, 0.895);"></i>
+                </div>
+                <h2>Email</h2>
+                <h3>birenzdavid34@gmail.com</h3>
+            </div>
+            <div class="address">
+                <div class="icon">
+                    <i class="fa-solid fa-map-location-dot" style="color: rgba(0, 140, 255, 0.895);"></i>
+                </div>
+                <h2>Address</h2>
+                <h3>Kk 306, Kigali, Rwanda</h3>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/david-birenzi-684734329/" target="_blank"> 
+                <div class="icon"><i class="fa-brands fa-linkedin-in" style="color: rgba(0, 140, 255, 0.895);"></i></div>
+                </a>
+                <h2>LinkedIn</h2>
+                <h3>davidbirenzi</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="line-container">
+        <div class="circle"></div>
+        <div class="line"></div>
+        <span class="line-text">&copy davidbirenzi 2024</span>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.links');
+
+        hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

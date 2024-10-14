@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>davidbirenzi</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" href="images/logo.jpg" type="image/jpg">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <label for="toggle" class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+
+            <div class="links">
+                <div class="port"><a href="index.html">Online portfolio</a></div>
+                <a href="about.html"><p>About me</p></a>
+                <a href="education.html">Education</a>
+                <a href="experience.html">Experience</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="liner">
+                <div class="short-line"></div>
+                <div class="short-circle"></div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="center">
+        <div class="edu">My Biography</div>
+        <div class="myline"></div>
+        <div class="paragraph">
+            I completed my secondary studies in 2022, focusing on mathematics, <br>
+             economics, and computer science. After high school, I began coding <br>
+              and had the opportunity to engage in game development at the ICT <br>
+              Innovation Center Kigali Hub, where we used C# and Unity to create <br>
+               mobile and desktop games. I worked in game development for about <br>
+               seven months while also exploring web development. <br> 
+               Currently, I am pursuing a degree in software engineering <br>
+                at African Leadership University. I have an experience <br>
+                  in HTML, CSS, Python, JavaScript (Node.js), C#, <br>
+                  and MySQL, with some foundational knowledge in Java and C++. <br>
+                  Looking ahead, I plan to specialize in Artificial Intelligence.</div>
+
+     <div class="right">
+     </div>
+    </div>
+
+    <div class="line-container">
+        <div class="circle"></div>
+        <div class="line"></div>
+        <span class="line-text">&copy davidbirenzi 2024</span>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.links');
+
+        hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

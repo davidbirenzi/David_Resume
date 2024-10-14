@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>davidbirenzi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo.jpg" type="image/jpg">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <label for="toggle" class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+            
+            <div class="links">
+                <div class="port"><a href="index.html">Online portfolio</a></div>
+                <a href="about.html">About me</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html">Experience</a>
+                <a href="project.html">Project</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="liner">
+                <div class="short-line"></div>
+                <div class="short-circle"></div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="main">
+        <div class="hi">Hello!!!</div>
+        <div class="david">
+            <span id="name"></span>
+        </div>
+        <div class="pro">
+            <div class="btn">A software engineer</div>
+        </div>
+        <p>David Birenzi is a software engineer with a passion for leveraging <br> technology
+         to solve real-world problems. With a strong background in development, <br> I continually
+         seek innovative solutions to improve lives through technology.</p>
+        
+    
+    </div>
+
+    <div class="line-container">
+        <div class="circle"></div>
+        <div class="line"></div>
+        <span class="line-text">&copy davidbirenzi 2024</span>
+    </div>
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.links');
+
+        hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+        document.addEventListener("DOMContentLoaded", function() {
+            const nameElement = document.getElementById("name");
+            const name = "I'm David Birenzi";
+            let i = 0;
+        
+            function typeWriter() {
+                if (i < name.length) {
+                    nameElement.innerHTML += name.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 150);
+                }
+            }
+        
+            typeWriter();
+        });
+    </script>
+</body>
+</html>

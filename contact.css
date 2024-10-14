@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(5,5,8);
+    background: linear-gradient(90deg, rgba(5,5,8,1) 0%, rgba(23,23,31,1) 44%, rgba(42, 123, 137, 0.895) 100%);
+    font-family: Monospace;
+    overflow-x: hidden;
+}
+
+/* The navigation bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0 5%;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.links a p {
+    text-decoration: underline rgba(42, 123, 137, 0.895);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+.port {
+    background-color: rgba(42, 123, 137, 0.895);
+    padding: 10px;
+}
+
+.links a:hover {
+    text-decoration: underline rgba(42, 123, 137, 0.895);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+/* Hamburger menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Liner */
+.liner {
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
+
+.short-line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: white;
+}
+
+.short-circle {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* The main part */
+.main {
+    color: white;
+    padding: 2rem 5%;
+}
+
+.get {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.let {
+    font-size: 1.5rem;
+    color: rgba(42, 123, 137, 0.895);
+    font-weight: bold;
+    text-align: center;
+}
+
+.findme {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding-top: 8%;
+    text-align: center;
+}
+
+.icon {
+    font-size: 3rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+/* Footer */
+.line-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 86%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: white;
+}
+
+.line-text {
+    color: white;
+    font-family: 'Monospace';
+    font-size: 14px;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(23, 23, 31, 0.95);
+        position: absolute;
+        top: 15vh;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .links.show {
+        display: flex;
+    }
+
+    .nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .port {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .port a {
+        font-size: 1.5rem;
+    }
+
+    .get {
+        font-size: 2rem;
+    }
+
+    .let {
+        font-size: 1.2rem;
+    }
+
+    .findme {
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 5%;
+    }
+
+    .icon {
+        font-size: 2.5rem;
+    }
+
+    .line-container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .line-text {
+        font-size: 12px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
